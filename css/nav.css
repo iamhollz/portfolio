@@ -1,0 +1,23 @@
+/*NAV BAR*/
+div.container-fluid{
+	text-align: center;
+	background-color: white;
+	font-family: "fira-sans-2";
+	float: none;
+}
+a.navbar-brand{
+	height: 0px;
+	width: 0px;
+	float: none;
+}
+div.navbar-header{
+	height: 0px;
+}
+ul.nav.navbar-nav{
+	float: none;
+	display: inline-block;
+	vertical-align: top;
+}
+nav.navbar.navbar-default.navbar-fixed-top{
+	border-bottom: 0px;
+}

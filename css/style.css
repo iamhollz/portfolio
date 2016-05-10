@@ -1,0 +1,152 @@
+@import 'nav.css';
+
+body {
+	  font-family: "fira-sans-2", sans-serif;
+}
+.container-fluid{
+	margin-right: 50px;
+	margin-left: 50px;
+}
+  
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+    width: 100%;
+	height: auto;
+	background-repeat: no-repeat;
+}
+
+/*CONTENT*/
+section {
+	font-family: "fira-sans-2", sans-serif;
+}
+body p {
+	margin: 0px;
+}
+.color {
+	height: 400px;
+	text-align: center;
+/*	background-color: #f2f2f2;
+    background-color: #EA6045;*/
+  -webkit-animation: pulse 5s infinite alternate;
+}
+#big {
+	font-size: 60px;
+	padding-top: 40px;
+	margin: 0px;
+	color: #333232;
+}
+
+#design_copy {
+	padding-bottom: 60px;
+	font-size: 60px;
+	padding-top: 40px;
+	margin: 0px;
+	color: #333232;
+}
+#aopp_copy {
+	padding-bottom: 60px;
+	font-size: 60px;
+	padding-top: 40px;
+	margin: 0px;
+	color: #333232;
+	text-align: center;
+}
+
+#craft_copy {
+	padding-bottom: 60px;
+	font-size: 60px;
+	padding-top: 40px;
+	margin: 0px;
+	color: #333232;
+	text-align: center;
+}
+#med {
+	font-size: 31px;
+	margin: 0px;
+}
+#small {
+	font-size: 14px;
+	margin: 0px;
+}
+#about {
+	height: auto;
+	background-color: #ffffff;}
+.white_space{
+	height: 100px;
+}
+#design {
+	height: auto;
+	width: 100%;
+	background-color: #ffffff;
+	margin-top: 30px;
+
+/*	padding: 60px;*/
+}
+.fun {
+	height: 500px;
+	background-color: #ffffff;
+}
+.arrow {
+	margin-top: 60px;
+}
+p.about_me {
+	font-size: 18px;
+	text-align: left;
+/*	padding: 80px;*/
+}
+.col-md-3 {
+	width: auto;
+	display: inline-block;
+	padding-bottom: 80px;
+}
+.col-sm-12 {
+	display: block;
+}
+
+/*COLOR SHIFT*/
+@-webkit-keyframes pulse {
+  0% {background-color: #FFFFFF;}
+  25% {background-color: #ccccff;}
+  50% {background-color: #ccccff;}
+  75% {background-color: #ccccff;}
+  100% {background-color: #ccccff;}
+
+  @keyframes colorShift {
+  0%   {background: #ffffff; left:0px; top:0px;}
+  25%  {background: #ccccff; left:0px; top:0px;}
+  50%  {background: #ccccff; left:0px; top:0px;}
+  75%  {background: #ccccff; left:0px; top:0px;}
+  100% {background: #ccccff; left:0px; top:0px;}
+  }
+}
+
+.swatch-a {
+  width: auto;
+  height: auto;
+  background: white;
+  position:relative;
+/*   Chrome, Safari, Opera */
+  -webkit-animation-name:colorShift;
+  -webkit-animation-duration:time;
+  -webkit-animation-timing-function:ease-in-out;
+  -webkit-animation-delay:0s;
+  -webkit-animation-iteration-count:infinite;
+  -webkit-animation-direction:reverse;
+  -webkit-animation-play-state:running;
+/*   Standard syntax */  
+  animation-name:colorShift;
+  animation-duration:time;
+  animation-timing-function:ease-in-out;
+  animation-delay:0s;
+  animation-iteration-count:infinite;
+  animation-direction:reverse;
+  animation-play-state:running;
+  @include color-shift('rgba(255,83,13,1)', 'rgba(232,44,12,1)', 'rgba(255,0,0,1)', 'rgba(232,12,122,1)', 'rgba(255,13,255,1)');
+}
+
+
+
+
+
+
